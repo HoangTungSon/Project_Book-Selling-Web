@@ -57,7 +57,7 @@ public class BookController {
 
     //------------------- Update a Customer --------------------------------------------------------
 
-    @RequestMapping(value = "/books/{id}", method = RequestMethod.PUT)
+    @RequestMapping(value = "/books/{id}", method = RequestMethod.PATCH)
     public ResponseEntity<Book> updateBook(@PathVariable("id") long id, @RequestBody Book book) {
         System.out.println("Updating Book " + id);
 
