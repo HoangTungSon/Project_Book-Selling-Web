@@ -2,9 +2,11 @@ package source.service;
 
 import source.model.Book;
 
+import java.util.List;
+
 public interface BookService {
 
-    Iterable<Book> findAll();
+    List<Book> findAll();
 
     Book findById(Long id);
 

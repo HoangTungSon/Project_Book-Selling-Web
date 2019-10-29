@@ -5,14 +5,16 @@ import source.model.Book;
 import source.repository.BookRepository;
 import source.service.BookService;
 
+import java.util.List;
+
 public class BookServiceImpl implements BookService {
 
     @Autowired
     private BookRepository bookRepository;
 
     @Override
-    public Iterable<Book> findAll() {
-        return bookRepository.findAll();
+    public List<Book> findAll() {
+        return (List<Book>)bookRepository.findAll();
     }
 
     @Override
@@ -32,6 +34,6 @@ public class BookServiceImpl implements BookService {
 
     @Override
     public Iterable<Book> findAllByName(String name) {
-        return bookRepository.findAllByName(name);
+        return null;
     }
 }
