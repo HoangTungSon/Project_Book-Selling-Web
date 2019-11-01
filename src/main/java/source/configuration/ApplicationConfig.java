@@ -8,7 +8,6 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
-import org.springframework.data.web.config.EnableSpringDataWebSupport;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import org.springframework.orm.jpa.JpaTransactionManager;
 import org.springframework.orm.jpa.JpaVendorAdapter;
@@ -23,7 +22,9 @@ import org.thymeleaf.spring4.SpringTemplateEngine;
 import org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver;
 import org.thymeleaf.spring4.view.ThymeleafViewResolver;
 import org.thymeleaf.templatemode.TemplateMode;
+import source.service.CategoryService;
 import source.service.BookService;
+import source.service.impl.CategoryServiceImpl;
 import source.service.impl.BookServiceImpl;
 
 import javax.persistence.EntityManager;
@@ -48,6 +49,11 @@ public class ApplicationConfig extends WebMvcConfigurerAdapter implements Applic
     @Bean
     public BookService bookService (){
         return new BookServiceImpl();
+    }
+
+    @Bean
+    public CategoryService authorService() {
+        return new CategoryServiceImpl();
     }
 
     //Thymeleaf Configuration
