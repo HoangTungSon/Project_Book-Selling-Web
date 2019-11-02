@@ -8,4 +8,6 @@ import java.util.List;
 public interface AuthorRepository extends PagingAndSortingRepository<Author, Long> {
 
     List<Author> findAllByName (String name);
+
+    Author findAuthorByName (String name);
 }
