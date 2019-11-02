@@ -22,8 +22,10 @@ import org.thymeleaf.spring4.SpringTemplateEngine;
 import org.thymeleaf.spring4.templateresolver.SpringResourceTemplateResolver;
 import org.thymeleaf.spring4.view.ThymeleafViewResolver;
 import org.thymeleaf.templatemode.TemplateMode;
+import source.service.AuthorService;
 import source.service.CategoryService;
 import source.service.BookService;
+import source.service.impl.AuthorServiceImpl;
 import source.service.impl.CategoryServiceImpl;
 import source.service.impl.BookServiceImpl;
 
@@ -47,12 +49,17 @@ public class ApplicationConfig extends WebMvcConfigurerAdapter implements Applic
     }
 
     @Bean
+    public AuthorService authorService () {
+        return new AuthorServiceImpl();
+    }
+
+    @Bean
     public BookService bookService (){
         return new BookServiceImpl();
     }
 
     @Bean
-    public CategoryService authorService() {
+    public CategoryService categoryService() {
         return new CategoryServiceImpl();
     }
 

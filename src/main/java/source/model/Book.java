@@ -1,6 +1,8 @@
 package source.model;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
 import java.util.Set;
 
@@ -14,13 +16,17 @@ public class Book {
 
     private String name;
 
+    private String author_name;
+
     private String publisher;
 
+    @JsonIgnore
     @ManyToOne
     @JoinColumn(name = "author_id")
     private Author author;
 
-    @ManyToMany
+    @JsonIgnore
+    @ManyToMany(fetch = FetchType.EAGER)
     @JoinTable(
             name = "category_like",
             joinColumns = @JoinColumn(name = "book_id"),
@@ -40,6 +46,14 @@ public class Book {
         this.name = name;
         this.author = author;
         this.publisher = publisher;
+        this.categorySet = categorySet;
+    }
+
+    public Book(String name, String author_name, String publisher, Author author, Set<Category> categorySet) {
+        this.name = name;
+        this.author_name = author_name;
+        this.publisher = publisher;
+        this.author = author;
         this.categorySet = categorySet;
     }
 
@@ -88,4 +102,11 @@ public class Book {
         this.publisher = publisher;
     }
 
+    public String getAuthor_name() {
+        return author_name;
+    }
+
+    public void setAuthor_name(String author_name) {
+        this.author_name = author_name;
+    }
 }

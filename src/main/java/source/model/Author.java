@@ -1,5 +1,7 @@
 package source.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
+
 import javax.persistence.*;
 import java.util.Set;
 
@@ -13,7 +15,7 @@ public class Author {
 
     private String name;
 
-    @OneToMany
+    @OneToMany(mappedBy = "author", fetch = FetchType.EAGER)
     private Set<Book> bookAuthors;
 
     public Author() {

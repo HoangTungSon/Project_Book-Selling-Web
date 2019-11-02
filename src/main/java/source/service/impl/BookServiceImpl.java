@@ -33,7 +33,7 @@ public class BookServiceImpl implements BookService {
     }
 
     @Override
-    public Iterable<Book> findAllByName(String name) {
-        return null;
+    public List<Book> findAllByName(String name) {
+        return bookRepository.findAllByName(name);
     }
 }

@@ -2,15 +2,33 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="1d68eff4-e650-4b50-812e-15e2cbf1942a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/source/controller/CategoryController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/source/model/Author.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/source/repository/CategoryRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/source/service/CategoryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/source/service/impl/CategoryServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/source/repository/AuthorRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/source/service/AuthorService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/source/service/impl/AuthorServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/source/configuration/ApplicationConfig.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/source/configuration/ApplicationConfig.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/source/controller/BookController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/source/controller/BookController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/source/model/Book.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/source/model/Book.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/source/repository/BookRepository.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/source/repository/BookRepository.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/source/service/BookService.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/source/service/BookService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/java/main/source/service/impl/BookServiceImpl.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/source/service/impl/BookServiceImpl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/Book_store-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/Book_store-1.0-SNAPSHOT.war" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/source/configuration/ApplicationConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/source/configuration/ApplicationConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/source/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/source/controller/BookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/source/controller/CategoryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/source/controller/CategoryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/source/model/Author.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/source/model/Author.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/source/model/Book.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/source/model/Book.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/source/model/Category.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/source/model/Category.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/source/repository/BookRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/source/repository/BookRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/source/service/BookService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/source/service/BookService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/source/service/impl/BookServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/source/service/impl/BookServiceImpl.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -192,7 +210,10 @@
       <workItem from="1572323556349" duration="66000" />
       <workItem from="1572338734847" duration="1468000" />
       <workItem from="1572343525235" duration="138000" />
-      <workItem from="1572592096047" duration="2765000" />
+      <workItem from="1572592096047" duration="4240000" />
+      <workItem from="1572597581713" duration="2978000" />
+      <workItem from="1572616222628" duration="2876000" />
+      <workItem from="1572679617555" duration="2817000" />
     </task>
     <servers />
   </component>

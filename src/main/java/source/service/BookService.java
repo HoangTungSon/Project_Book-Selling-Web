@@ -14,6 +14,6 @@ public interface BookService {
 
     void delete (Long id);
 
-    Iterable<Book> findAllByName (String name);
+    List<Book> findAllByName (String name);
 
 }

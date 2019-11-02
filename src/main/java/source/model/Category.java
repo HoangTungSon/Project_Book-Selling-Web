@@ -13,7 +13,7 @@ public class Category {
 
     private String name;
 
-    @ManyToMany(mappedBy = "categorySet")
+    @ManyToMany(mappedBy = "categorySet", fetch = FetchType.EAGER)
     private Set<Book> bookSet;
 
     public Category() {
