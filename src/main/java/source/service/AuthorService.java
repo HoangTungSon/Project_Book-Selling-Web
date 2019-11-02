@@ -18,4 +18,6 @@ public interface AuthorService {
     List<Author> findAllByName (String name);
 
     Author findByName(String name);
+
+    Author authorCheck(String author_name);
 }

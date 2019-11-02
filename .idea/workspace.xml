@@ -3,10 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="1d68eff4-e650-4b50-812e-15e2cbf1942a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/libs/Book_store-1.0-SNAPSHOT.war" beforeDir="false" afterPath="$PROJECT_DIR$/build/libs/Book_store-1.0-SNAPSHOT.war" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/source/controller/BookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/source/controller/BookController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/source/repository/AuthorRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/source/repository/AuthorRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/source/service/AuthorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/source/service/AuthorService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/source/service/impl/AuthorServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/source/service/impl/AuthorServiceImpl.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -192,7 +190,8 @@
       <workItem from="1572597581713" duration="2978000" />
       <workItem from="1572616222628" duration="2876000" />
       <workItem from="1572679617555" duration="3064000" />
-      <workItem from="1572683443100" duration="1957000" />
+      <workItem from="1572683443100" duration="2118000" />
+      <workItem from="1572686969652" duration="2184000" />
     </task>
     <servers />
   </component>

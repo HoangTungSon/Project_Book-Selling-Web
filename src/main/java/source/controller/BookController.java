@@ -29,12 +29,6 @@ public class BookController {
     @Autowired
     private AuthorService authorService;
 
-
-    public boolean authorCheck(String author_name){
-        List<Author> author = authorService.findAllByName(author_name);
-        return author != null;
-    }
-
     //-------------------Retrieve All Books--------------------------------------------------------
 
     @RequestMapping(value = "/books", method = RequestMethod.GET)
@@ -65,17 +59,7 @@ public class BookController {
     public ResponseEntity<Void> createBook(@RequestBody() Book book, UriComponentsBuilder ucBuilder) {
         System.out.println("Creating Book " + book.getName());
 
-        Author author = new Author();
-
-        if(!authorCheck(book.getAuthor_name())) {
-            author.setName(book.getAuthor_name());
-            authorService.save(author);
-
-        } else {
-            author = authorService.findByName(book.getAuthor_name());
-        }
-
-        book.setAuthor(author);
+        book.setAuthor(authorService.authorCheck(book.getAuthor_name()));
 
         bookService.save(book);
 
