@@ -9,7 +9,6 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.util.UriComponentsBuilder;
 import source.model.Book;
-import source.model.Category;
 import source.service.AuthorService;
 import source.service.BookService;
 import source.service.CategoryService;
@@ -28,8 +27,6 @@ public class BookController {
 
     @Autowired
     private AuthorService authorService;
-
-//    List<Category> categoryList = categoryService.findAll();
 
     //-------------------Retrieve All Books--------------------------------------------------------
 
