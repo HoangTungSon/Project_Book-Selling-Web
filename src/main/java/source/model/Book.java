@@ -20,6 +20,8 @@ public class Book {
 
     private String publisher;
 
+    private Long quantity;
+
     @JsonIgnore
     @ManyToOne
     @JoinColumn(name = "author_id")
@@ -53,6 +55,15 @@ public class Book {
         this.name = name;
         this.author_name = author_name;
         this.publisher = publisher;
+        this.author = author;
+        this.categorySet = categorySet;
+    }
+
+    public Book(String name, String author_name, String publisher, Long quantity, Author author, Set<Category> categorySet) {
+        this.name = name;
+        this.author_name = author_name;
+        this.publisher = publisher;
+        this.quantity = quantity;
         this.author = author;
         this.categorySet = categorySet;
     }
@@ -108,5 +119,13 @@ public class Book {
 
     public void setAuthor_name(String author_name) {
         this.author_name = author_name;
+    }
+
+    public Long getQuantity() {
+        return quantity;
+    }
+
+    public void setQuantity(Long quantity) {
+        this.quantity = quantity;
     }
 }

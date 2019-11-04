@@ -8,6 +8,7 @@ import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
+import org.springframework.data.web.config.EnableSpringDataWebSupport;
 import org.springframework.jdbc.datasource.DriverManagerDataSource;
 import org.springframework.orm.jpa.JpaTransactionManager;
 import org.springframework.orm.jpa.JpaVendorAdapter;
@@ -25,9 +26,11 @@ import org.thymeleaf.templatemode.TemplateMode;
 import source.service.AuthorService;
 import source.service.CategoryService;
 import source.service.BookService;
+import source.service.UserService;
 import source.service.impl.AuthorServiceImpl;
 import source.service.impl.CategoryServiceImpl;
 import source.service.impl.BookServiceImpl;
+import source.service.impl.UserServiceImpl;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
@@ -39,6 +42,7 @@ import java.util.Properties;
 @EnableTransactionManagement
 @EnableJpaRepositories("source.repository")
 @ComponentScan("source")
+@EnableSpringDataWebSupport
 public class ApplicationConfig extends WebMvcConfigurerAdapter implements ApplicationContextAware {
 
     private ApplicationContext applicationContext;
@@ -63,6 +67,10 @@ public class ApplicationConfig extends WebMvcConfigurerAdapter implements Applic
         return new CategoryServiceImpl();
     }
 
+    @Bean
+    public UserService userService(){
+        return new UserServiceImpl();
+    }
     //Thymeleaf Configuration
     @Bean
     public SpringResourceTemplateResolver templateResolver(){

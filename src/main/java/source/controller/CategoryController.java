@@ -9,9 +9,7 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.util.UriComponentsBuilder;
 import source.model.Category;
 import source.service.CategoryService;
-
 import java.util.List;
-
 
 @CrossOrigin(origins = "*", allowedHeaders = "*")
 @RestController
@@ -24,11 +22,11 @@ public class CategoryController {
 
     @RequestMapping(value = "/categories", method = RequestMethod.GET)
     public ResponseEntity<List<Category>> listAllCategory() {
-        List<Category> authors = categoryService.findAll();
-        if (authors.isEmpty()) {
+        List<Category> categories = categoryService.findAll();
+        if (categories.isEmpty()) {
             return new ResponseEntity<>(HttpStatus.NO_CONTENT);
         }
-        return new ResponseEntity<>(authors, HttpStatus.OK);
+        return new ResponseEntity<>(categories, HttpStatus.OK);
     }
 
     //-------------------Retrieve Single Category--------------------------------------------------------
